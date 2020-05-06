@@ -22,10 +22,11 @@ function ClearNull() {
 function RedPlus() {
     var e=document.getElementById("S12").innerHTML[0];
     var n=document.getElementById("S12").innerHTML[1];
+    var a=document.getElementById("S22").innerHTML[0];
     if ( n<5 ) { n=n*1+1; };
     document.getElementById("S12").innerHTML=e+n;
     if ( n==5 ) { EndBout(); } 
-    else {if ( e=="A" || e=="N" ) { EndBout(); }; }    
+    else {if ( e=="A" || a=="A" ) { EndBout(); }; }    
 }
 
 function RedMinus() {
@@ -38,10 +39,11 @@ function RedMinus() {
 function GreenPlus() {
     var e=document.getElementById("S21").innerHTML[0];
     var n=document.getElementById("S21").innerHTML[1];
+    var a=document.getElementById("S12").innerHTML[0];
     if ( n<5 ) { n=n*1+1; };
     document.getElementById("S21").innerHTML=e+n;
     if ( n==5 ) { EndBout(); }
-    else {if ( e=="A" || e=="N" ) { EndBout(); }; }
+    else {if ( e=="A" || a=="A" ) { EndBout(); }; }
 }
 
 function GreenMinus() {
